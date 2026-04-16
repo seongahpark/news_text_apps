@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Nanum+Gothic:wght@400;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Outfit', 'Nanum Gothic', sans-serif;
+}
+
+.main {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.stButton>button {
+    border-radius: 12px;
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    white-space: nowrap; /* 텍스트 줄바꿈 강제 방지 */
+    min-width: fit-content;
+}
+
+.stButton>button p {
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* 화면이 작아질 때(반응형) 버튼 패딩과 글씨 크기 축소 */
+@media screen and (max-width: 768px) {
+    .stButton>button {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    color: white;
+}
+
+.news-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.keyword-tag {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.sentiment-badge {
+    display: inline-block;
+    padding: 5px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.sentiment-positive { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.sentiment-negative { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.sentiment-neutral  { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+
+.category-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-right: 8px;
+}
+.cat-Politics   { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.cat-Economy    { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+.cat-Society    { background: #e0e7ff; color: #3730a3; border: 1px solid #a5b4fc; }
+.cat-IT         { background: #ccfbf1; color: #065f46; border: 1px solid #5eead4; }
+.cat-Securities { background: #fce7f3; color: #9d174d; border: 1px solid #f9a8d4; }
+.cat-Other      { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+
+.impact-bar-wrap {
+    background: #e2e8f0;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    margin-top: 6px;
+    overflow: hidden;
+}
+.impact-bar-fill {
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    transition: width 0.6s ease;
+}
+
+h1, h2, h3 {
+    color: #1e293b;
+}
+
+.sidebar .sidebar-content {
+    background: #ffffff;
+}
+
+.stMetric {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.stock-positive {
+    border-left: 4px solid #22c55e;
+    padding: 10px 15px;
+    margin: 6px 0;
+    background: #f0fdf4;
+    border-radius: 0 8px 8px 0;
+}
+.stock-negative {
+    border-left: 4px solid #ef4444;
+    padding: 10px 15px;
+    margin: 6px 0;
+    background: #fef2f2;
+    border-radius: 0 8px 8px 0;
+}
