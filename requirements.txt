@@ -1,0 +1,8 @@
+streamlit
+newspaper4k
+requests
+beautifulsoup4
+openai
+python-dotenv
+pandas
+lxml_html_clean
